@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Hero from '../src/components/widgets/Hero';
 import SocialProof from '../src/components/widgets/SocialProof';
 import Features from '../src/components/widgets/Features';
