@@ -579,6 +579,17 @@ export const contactHome: ContactProps = {
       icon: IconClock,
     },
   ],
+  form: {
+    title: 'Contact Us',
+    description: 'Fill out the form below and we will get back to you soon.',
+    inputs: [
+      { type: 'text', label: 'Name', name: 'name', placeholder: 'Your Name' },
+      { type: 'email', label: 'Email', name: 'email', placeholder: 'Your Email' }
+    ],
+    textarea: { label: 'Message', name: 'message', placeholder: 'Your Message' },
+    btn: { title: 'Send Message', type: 'submit' },
+    btnPosition: 'center',
+  },
 };
 
 // CallToAction data *******************
