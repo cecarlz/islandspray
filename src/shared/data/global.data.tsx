@@ -6,7 +6,7 @@ import {
   IconChevronDown,
   IconRss,
 } from '@tabler/icons-react';
-import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
+import { FooterProps, HeaderProps } from '../types';
 
 // Announcement data removed: no longer used
 
