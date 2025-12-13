@@ -159,27 +159,39 @@ export const contentHomeTwo: ContentProps = {
     tagline: undefined,
   },
   content:
-    'Provides seamless spray foam insulation designed to regulate indoor temperature, reduce energy costs, and improve structural comfort.',
+    'We offer a comprehensive range of insulation solutions for every need, from residential to industrial applications.',
   items: [
     {
-      title: 'Energy Efficiency Enhancement',
-      description:
-        'Our insulation services improve building energy efficiency by maintaining optimal thermal conditions year-round.',
+      title: 'Spray Foam Insulation',
+      description: [
+        'Closed Cell Insulation',
+        'Open Cell Insulation',
+      ],
     },
     {
-      title: 'Healthier Indoor Environment',
-      description:
-        'Proper insulation reduces temperature fluctuations and prevents pollutant infiltration for healthier indoor air quality.',
+      title: 'Cellulose Insulation',
+      description: '',
     },
     {
-      title: 'Tailored Insulation Strategies',
-      description:
-        'We assess each project individually to provide tailored insulation for residential, commercial, or industrial buildings.',
+      title: 'Fiberglass Insulation',
+      description: [
+        'Fiberglass Batt (Batting) Insulation',
+      ],
     },
     {
-      title: 'Expert Installation & Technology',
-      description:
-        'Our trained team uses the latest insulation technologies and follows best practices to ensure superior results.',
+      title: 'Foam Board Insulation',
+      description: [
+        'Expanded Polystyrene (EPS)',
+        'Extruded Polystyrene (XPS)',
+        'Polyisocyanurate (PIR)',
+      ],
+    },
+    {
+      title: 'Speciality Insulation',
+      description: [
+        'Pipe Insulation',
+        'Tank Insulation',
+      ],
     },
   ],
   image: {
@@ -367,10 +379,9 @@ export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
-    tagline: 'FAQS',
+    title: '',
+    subtitle: undefined,
+    tagline: '',
   },
   items: [
     {
