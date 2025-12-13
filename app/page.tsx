@@ -32,13 +32,13 @@ export default function Page() {
       <Hero {...heroHome} />
       <SocialProof {...socialProofHome} />
       <Features {...featuresHome} />
-      <Content {...contentHomeOne} />
+
       <Content {...contentHomeTwo} />
       <Content {...contentHomeThree} />
       <Content {...contentHomeFour} />
-      <Content {...contentHomeSix} />
+
       <Content {...contentHomeSeven} />
-      <FAQs2 {...faqs2Home} />
+      {/* <FAQs2 {...faqs2Home} /> */}
       <Contact {...contactHome} />
     </>
   );
