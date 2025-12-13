@@ -14,7 +14,6 @@ import {
   contentHomeTwo,
   contentHomeThree,
   contentHomeFour,
-  contentHomeFive,
   contentHomeSix,
   contentHomeSeven,
   faqs2Home,
@@ -37,7 +36,6 @@ export default function Page() {
       <Content {...contentHomeTwo} />
       <Content {...contentHomeThree} />
       <Content {...contentHomeFour} />
-      <Content {...contentHomeFive} />
       <Content {...contentHomeSix} />
       <Content {...contentHomeSeven} />
       <FAQs2 {...faqs2Home} />
