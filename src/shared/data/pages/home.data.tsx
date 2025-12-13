@@ -273,45 +273,6 @@ export const contentHomeFour: ContentProps = {
 };
 
 // Content data on Home page *******************
-export const contentHomeFive: ContentProps = {
-  id: 'contentFive-on-home',
-  hasBackground: true,
-  header: {
-    title: (
-      <>
-        <span style={{ display: 'block', fontWeight: 'bold', fontSize: '2.5rem', lineHeight: 1.1 }}>
-          GENERAL <span style={{ borderBottom: '4px solid #1976d2' }}>CONSTRUCTION</span>
-        </span>
-      </>
-    ),
-    subtitle: undefined,
-    tagline: undefined,
-  },
-  content:
-    'Provides advanced spray-applied insulation designed to optimize thermal resistance, reduce energy loss, and maintain interior comfort in all climate conditions.',
-  items: [
-    {
-      title: 'Comprehensive Construction Services',
-      description:
-        'Island Spray Professionals Ltd provides end-to-end construction services from planning to project completion.',
-    },
-    {
-      title: 'Project Management Excellence',
-      description: 'Close collaboration with clients ensures projects meet vision, budget, and timeline requirements.',
-    },
-    {
-      title: 'Quality Craftsmanship',
-      description:
-        'Commitment to superior craftsmanship and attention to detail distinguishes the company in the industry.',
-    },
-  ],
-  image: {
-    src: constructionImg,
-    alt: 'General Construction Image',
-  },
-  isReversed: false,
-  isAfterContent: false,
-};
 
 // Content data on Home page *******************
 export const contentHomeSix: ContentProps = {
@@ -557,26 +518,35 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: undefined,
     tagline: 'Contact',
   },
-  content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+  content: '',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Physical Address',
+      description: ['6c Bellevue Lane; Freeport, Grand Bahama, Bahamas'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Mailing Address',
+      description: ['PO BOX F-40091, Freeport, Grand Bahama, Bahamas'],
+      icon: IconMapPin,
+    },
+    {
+      title: 'Company Email Address',
+      description: ['info@islandspray.com'],
+      icon: IconMail,
+    },
+    {
+      title: 'Office Contact Number',
+      description: ['+1 (242) 727-0047'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
+      title: 'Customer Service Contact Number',
+      description: ['+1 (242) 826-8363'],
+      icon: IconPhoneCall,
     },
   ],
   form: {
@@ -584,7 +554,7 @@ export const contactHome: ContactProps = {
     description: 'Fill out the form below and we will get back to you soon.',
     inputs: [
       { type: 'text', label: 'Name', name: 'name', placeholder: 'Your Name' },
-      { type: 'email', label: 'Email', name: 'email', placeholder: 'Your Email' }
+      { type: 'email', label: 'Email', name: 'email', placeholder: 'Your Email' },
     ],
     textarea: { label: 'Message', name: 'message', placeholder: 'Your Message' },
     btn: { title: 'Send Message', type: 'submit' },
