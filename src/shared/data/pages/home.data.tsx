@@ -163,10 +163,7 @@ export const contentHomeTwo: ContentProps = {
   items: [
     {
       title: 'Spray Foam Insulation',
-      description: [
-        'Closed Cell Insulation',
-        'Open Cell Insulation',
-      ],
+      description: ['Closed Cell Insulation', 'Open Cell Insulation'],
     },
     {
       title: 'Cellulose Insulation',
@@ -174,24 +171,15 @@ export const contentHomeTwo: ContentProps = {
     },
     {
       title: 'Fiberglass Insulation',
-      description: [
-        'Fiberglass Batt (Batting) Insulation',
-      ],
+      description: ['Fiberglass Batt (Batting) Insulation'],
     },
     {
       title: 'Foam Board Insulation',
-      description: [
-        'Expanded Polystyrene (EPS)',
-        'Extruded Polystyrene (XPS)',
-        'Polyisocyanurate (PIR)',
-      ],
+      description: ['Expanded Polystyrene (EPS)', 'Extruded Polystyrene (XPS)', 'Polyisocyanurate (PIR)'],
     },
     {
       title: 'Speciality Insulation',
-      description: [
-        'Pipe Insulation',
-        'Tank Insulation',
-      ],
+      description: ['Pipe Insulation', 'Tank Insulation'],
     },
   ],
   image: {
