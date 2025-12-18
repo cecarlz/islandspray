@@ -43,13 +43,13 @@ import excellenceImg from '~/assets/images/content/excellence.jpeg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  headline: 'Protecting Your Investment',
-  subheadline: 'Expert Spray Foam Insulation, Waterproofing, and Coatings for Every Project',
+  title: 'Protecting Your Investment',
+  subtitle: 'Expert Spray Foam Insulation, Waterproofing, and Coatings for Every Project',
   image: {
     src: heroImg,
     alt: 'Waterproofing Image',
   },
-  cta: {
+  callToAction: {
     text: 'Get a Free Estimate',
     href: '/contact',
   },
