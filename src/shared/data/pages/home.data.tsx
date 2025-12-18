@@ -5,7 +5,6 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
   IconCheck,
-  IconClock,
   IconDownload,
   IconListCheck,
   IconMail,
@@ -44,11 +43,15 @@ import excellenceImg from '~/assets/images/content/excellence.jpeg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: <>Island Spray Professionals  Ltd</>,
-
+  headline: 'Protecting Your Investment',
+  subheadline: 'Expert Spray Foam Insulation, Waterproofing, and Coatings for Every Project',
   image: {
     src: heroImg,
     alt: 'Waterproofing Image',
+  },
+  cta: {
+    text: 'Get a Free Estimate',
+    href: '/contact',
   },
 };
 

@@ -6,28 +6,20 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
   return (
     <section id="heroOne">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
-          <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
-            {tagline && (
-              <p className="text-base font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-200">
-                {tagline}
-              </p>
-            )}
-            {title && (
-              <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-7xl lg:text-8xl">
-                {title}
-              </h1>
-            )}
-            <div className="mx-auto max-w-3xl">
-              {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
-              <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
-                {callToAction && <CTA callToAction={callToAction} linkClass="btn btn-primary" />}
-                {callToAction2 && <CTA callToAction={callToAction2} linkClass="btn" />}
-              </div>
-            </div>
+        <div className="py-12 mb-10">
+          <div className="flex justify-center items-center">
+            <Image
+              src={require('~/assets/images/logo.png')}
+              alt="Island Spray Professionals LTD logo"
+              width={700}
+              height={300}
+              className="object-contain"
+              priority
+            />
           </div>
+
           {image && (
-            <div className="relative m-auto w-full max-w-screen-2xl aspect-video">
+            <div className="relative m-auto w-full max-w-screen-2xl mt-5">
               <Image
                 className="mx-auto h-full w-full object-cover rounded-2xl shadow-2xl bg-gray-400 dark:bg-slate-700"
                 src={image.src}
