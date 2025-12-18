@@ -52,7 +52,7 @@ export const hero2About: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: hero2Img,
+    src: '', // image removed
     alt: 'Hero TailNext',
   },
 };

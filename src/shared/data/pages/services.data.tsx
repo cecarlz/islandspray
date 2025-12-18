@@ -102,7 +102,7 @@ export const contentServicesOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: '', // image removed
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -136,7 +136,7 @@ export const contentServicesTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: '', // image removed
     alt: 'Colorful Image',
   },
   isReversed: false,
