@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -13,11 +14,14 @@ const Page = () => {
 
         {/* Banner Image */}
         <div className="w-full flex justify-center mb-8">
-          <img
+          <Image
             src="/images/about-us/banner.jpg"
             alt="Island Spray Professionals team in front of a building project"
+            width={1920}
+            height={600}
             className="rounded-lg shadow-lg object-cover w-full h-[550px] md:h-[900px] max-w-none border border-gray-200"
             style={{ objectPosition: 'center' }}
+            priority
           />
         </div>
 
@@ -42,7 +46,7 @@ const Page = () => {
           </p>
           <p className="text-gray-700">
             Our team brings together diverse expertise and perspectives, united by a common goal: to deliver outstanding
-            results that exceed expectations. We're not just about providing services—we're about creating meaningful
+            results that exceed expectations. We&apos;re not just about providing services—we&apos;re about creating meaningful
             partnerships that drive success.
           </p>
         </section>
@@ -55,7 +59,7 @@ const Page = () => {
             demands of island environments.
           </p>
           <p className="text-gray-700">
-            We're committed to maintaining the highest standards of quality, integrity, and customer satisfaction in
+            We&apos;re committed to maintaining the highest standards of quality, integrity, and customer satisfaction in
             everything we do.
           </p>
         </section>
@@ -93,13 +97,13 @@ const Page = () => {
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
           <p className="text-gray-700 mb-4">
-            With years of experience and a proven track record of success, we've earned the trust of clients across
+            With years of experience and a proven track record of success, we&apos;ve earned the trust of clients across
             various industries. Our approach is simple: listen carefully, deliver excellence, and build relationships
             that last.
           </p>
           <p className="text-gray-700">
-            When you work with us, you're not just getting a service provider—you're gaining a partner who's invested in
-            your success. Let's work together to achieve your goals.
+            When you work with us, you&apos;re not just getting a service provider—you&apos;re gaining a partner who&apos;s invested in
+            your success. Let&apos;s work together to achieve your goals.
           </p>
         </section>
       </div>
@@ -108,7 +112,7 @@ const Page = () => {
       <div className="text-center mt-16 bg-gray-50 rounded-lg p-8 md:p-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
         <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-          We'd love to hear from you. Get in touch to learn more about how we can help your business thrive.
+          We&apos;d love to hear from you. Get in touch to learn more about how we can help your business thrive.
         </p>
         <a
           href="/contact"
