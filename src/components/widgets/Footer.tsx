@@ -32,25 +32,28 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          {columns.map(({ title, links }, index) => (
-            <div key={`item-column-${index}`} className="col-span-6 md:col-span-3 lg:col-span-2">
-              <div className="mb-2 font-medium dark:text-gray-300">{title}</div>
-              <ul className="text-sm">
-                {links &&
-                  links.map(({ label, href }, index2) => (
-                    <li key={`item-column-link-${index2}`} className="mb-2">
-                      <a
-                        className="text-muted transition duration-150 ease-in-out hover:text-gray-700 hover:underline dark:text-gray-400"
-                        aria-label={label}
-                        href={href}
-                      >
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </div>
-          ))}
+          {/* Only render columns if they exist and are an array */}
+          {Array.isArray(columns) &&
+            columns.length > 0 &&
+            columns.map(({ title, links }, index) => (
+              <div key={`item-column-${index}`} className="col-span-6 md:col-span-3 lg:col-span-2">
+                <div className="mb-2 font-medium dark:text-gray-300">{title}</div>
+                <ul className="text-sm">
+                  {links &&
+                    links.map(({ label, href }, index2) => (
+                      <li key={`item-column-link-${index2}`} className="mb-2">
+                        <a
+                          className="text-muted transition duration-150 ease-in-out hover:text-gray-700 hover:underline dark:text-gray-400"
+                          aria-label={label}
+                          href={href}
+                        >
+                          {label}
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))}
         </div>
         <div className="py-6 md:flex md:items-center md:justify-between md:py-8">
           <ul className="mb-4 flex md:order-1 md:ml-4 rtl:md:ml-0 rtl:md:mr-4 md:mb-0">

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { findLatestPosts } from '~/utils/posts';
+import { newsArticles } from '~/shared/data/news.data';
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -18,15 +19,26 @@ export default async function Home({}) {
           Blog
         </h1>
       </header>
-      <div className="grid grid-cols-1 gap-6  p-4 md:p-0 lg:grid-cols-2">
-        {posts.map(({ slug, title, image }: { slug: string, title: string, image: string }) => (
-          <div key={slug} className="flex flex-col overflow-hidden rounded-xl border border-gray-200 shadow-lg">
-            <Link href={`/${slug}`}>
-              <Image width={650} height={340} alt={title} src={`${image}`} />
-              <h2 className="p-4 font-bold">{title}</h2>
-            </Link>
-          </div>
-        ))}
+      {/* News Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold mb-6">Industry News</h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {newsArticles.map((article, idx) => (
+            <a
+              key={idx}
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-lg border p-6 shadow hover:shadow-lg transition bg-white"
+            >
+              {article.image && (
+                <img src={article.image} alt={article.title} className="mb-4 w-full h-48 object-cover rounded" />
+              )}
+              <h3 className="text-lg font-bold mb-2">{article.title}</h3>
+              <p className="text-gray-600 text-sm">{article.summary}</p>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

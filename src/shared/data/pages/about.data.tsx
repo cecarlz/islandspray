@@ -52,8 +52,8 @@ export const hero2About: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: '', // image removed
-    alt: 'Hero TailNext',
+    src: '/images/about-us/banner.jpg',
+    alt: 'Island Spray Professionals team in front of a building project',
   },
 };
 
