@@ -46,8 +46,8 @@ const Page = () => {
           </p>
           <p className="text-gray-700">
             Our team brings together diverse expertise and perspectives, united by a common goal: to deliver outstanding
-            results that exceed expectations. We&apos;re not just about providing services—we&apos;re about creating meaningful
-            partnerships that drive success.
+            results that exceed expectations. We&apos;re not just about providing services—we&apos;re about creating
+            meaningful partnerships that drive success.
           </p>
         </section>
 
@@ -59,8 +59,8 @@ const Page = () => {
             demands of island environments.
           </p>
           <p className="text-gray-700">
-            We&apos;re committed to maintaining the highest standards of quality, integrity, and customer satisfaction in
-            everything we do.
+            We&apos;re committed to maintaining the highest standards of quality, integrity, and customer satisfaction
+            in everything we do.
           </p>
         </section>
 
@@ -102,8 +102,8 @@ const Page = () => {
             that last.
           </p>
           <p className="text-gray-700">
-            When you work with us, you&apos;re not just getting a service provider—you&apos;re gaining a partner who&apos;s invested in
-            your success. Let&apos;s work together to achieve your goals.
+            When you work with us, you&apos;re not just getting a service provider—you&apos;re gaining a partner
+            who&apos;s invested in your success. Let&apos;s work together to achieve your goals.
           </p>
         </section>
       </div>

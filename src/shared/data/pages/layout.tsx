@@ -6,7 +6,6 @@ import { SITE } from '~/config.js';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 // import Announcement from '~/components/widgets/Announcement';
-import Footer2 from '~/components/widgets/Footer2';
 
 import { Inter as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
@@ -37,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps) {
           {/* <Announcement /> */}
           <Header />
           <main>{children}</main>
-          <Footer2 />
+          {/* Footer2 removed */}
         </Providers>
       </body>
     </html>
