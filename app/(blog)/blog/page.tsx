@@ -32,7 +32,13 @@ export default async function Home({}) {
               className="block rounded-lg border p-6 shadow hover:shadow-lg transition bg-white"
             >
               {article.image && (
-                <img src={article.image} alt={article.title} className="mb-4 w-full h-48 object-cover rounded" />
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  width={600}
+                  height={300}
+                  className="mb-4 w-full h-48 object-cover rounded"
+                />
               )}
               <h3 className="text-lg font-bold mb-2">{article.title}</h3>
               <p className="text-gray-600 text-sm">{article.summary}</p>
