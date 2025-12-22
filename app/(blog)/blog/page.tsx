@@ -16,12 +16,11 @@ export default async function Home({}) {
     <section className="mx-auto max-w-3xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
       <header>
         <h1 className="leading-tighter font-heading mb-8 text-center text-4xl font-bold tracking-tighter md:mb-16 md:text-5xl">
-          Blog
+          Island Spray News
         </h1>
       </header>
       {/* News Section */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">Industry News</h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {newsArticles.map((article, idx) => (
             <a

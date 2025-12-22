@@ -22,17 +22,15 @@ export const headerData: HeaderProps = {
       href: '/blog',
     },
     {
+      label: 'Specializations',
+      href: '#',
+    },
+    {
       label: 'Contact Us',
       href: '/contact',
     },
   ],
-  actions: [
-    {
-      text: 'Learn More ↗',
-      href: '/about',
-      targetBlank: false,
-    },
-  ],
+
   isSticky: true,
   showToggleTheme: true,
   showRssFeed: false,
@@ -46,7 +44,6 @@ export const footerData: FooterProps = {
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
   ],
-  columns: [], // empty columns to satisfy FooterProps
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
       <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
